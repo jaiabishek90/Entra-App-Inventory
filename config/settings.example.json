@@ -1,0 +1,31 @@
+{
+  "TenantId": "<TenantId>",
+  "AppId": "<AppRegistrationId>",
+  "CertThumbprint": "<CertificateThumbprint>",
+  "ExchangeOrganization": "<tenant>.onmicrosoft.com",
+  "SmtpServer": "<SMTPServer>",
+  "MailFrom": "<SenderEmail>",
+  "Recipients": [
+    "<Recipient1>",
+    "<Recipient2>"
+  ],
+  "IncludeOwnersAndMemberships": true,
+  "IncludeAssignedPrincipals": true,
+  "ResolveResourceNames": true,
+  "PreloadAllResourceSPs": true,
+  "HighPriorityPermissions": [
+    "User.ReadWrite.All",
+    "Mail.ReadWrite",
+    "Files.ReadWrite.All",
+    "Calendars.ReadWrite",
+    "Mail.Send",
+    "User.Export.All",
+    "Exchange.ManageAsApp",
+    "Directory.ReadWrite.All",
+    "Sites.ReadWrite.All"
+  ],
+  "EmailDisplayExceptions": [
+    "<ObjectIdOrApplicationId1>",
+    "<ObjectIdOrApplicationId2>"
+  ]
+}
